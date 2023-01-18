@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <form id="mycart" action="#">
+        <h1 style="color: blue; text-align: center;">My Shopping app</h1>
+<label><b>Enter Your Details:</b></label><br><hr>
+<label>Enter Shopping Price:</label>
+   <input type="number" id="detail" name="detail" required><br><br>
+   <label>Select The Platform:</label>
+   <select id="category" name="category" style="background-color: aqua;" required>
+    <option value="Amazon">Amazon</option>
+    <option value="Flipkart" selected>Flipkart</option>
+    <option value="Myntra">Myntra</option>
+   </select><br><br>
+   <label>Select Date:</label>
+   <input type="datetime-local" id="date" name="date" required><br><br>
+   <label>Add Notes:</label>
+   <input type="text" id="notes" name="notes" required>
+   <input type="submit" value="GO" style="background-color: aqua;">
+    </form><hr>
+    <label><b>The Details:<b></b></label>
+    <div id="list"><br>
+    </div><br><hr>
+    <label><b>The Total Amount Calculator:</b></label>
+    <div id="sum" style="color: red;"><br></div> 
+</div><br><hr>
+<label><b>Budget Status[limit-10000]:</b></label>
+<div id="Budget" style="color: red;"><br></div><hr> 
+<input type="button" onclick="removealldata()" value="RESET" style="background-color: red;">
+<script src="working.js"></script>
+</body>
+</html>
