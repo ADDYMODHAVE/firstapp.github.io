@@ -81,5 +81,5 @@ function removealldata(){
     key.forEach((e)=>{
     localStorage.removeItem(e);
     })
-    alert("ALL VANISHED");
+    alert("DATA SUCCESSFULLY CLEARED");
 }
