@@ -23,7 +23,7 @@ showonscreen(obj);
 function showonscreen(e){
 
     var li=`<li id=${e.notes}>Shopping Price:${e.price}--The Platform:${e.category}
-    <input type="button" onClick="editbtn('${e.price}','${e.notes}','${e.category}')" VALUE="edit">  <input type="button" onClick="deletebtn('${e.notes}','${e.price}')" value="X"></li>`;
+    <input type="button" onClick="editbtn('${e.price}','${e.notes}','${e.category}')" VALUE="edit" style="background-color: yellow;">  <input type="button" onClick="deletebtn('${e.notes}','${e.price}')" value="X" style="background-color: yellow;"></li>`;
     var add=document.getElementById("list");
     add.innerHTML+=li;
     var value=parseInt(e.price);
@@ -81,5 +81,5 @@ function removealldata(){
     key.forEach((e)=>{
     localStorage.removeItem(e);
     })
-    alert("DATA SUCCESSFULLY CLEARED");
+    alert("ALL CLEARED");
 }
