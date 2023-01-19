@@ -25,7 +25,7 @@ function showonscreen(e){
     document.getElementById("notes").value="";
 
     var li=`<li id=${e.notes}>Shopping Price:${e.price}--The Platform:${e.category}
-    <input type="button" onClick="editbtn('${e.price}','${e.notes}','${e.category}')" VALUE="edit" style="background-color: yellow;">  <input type="button" onClick="deletebtn('${e.notes}','${e.price}')" value="X" style="background-color: yellow;"></li><br>`;
+    <input type="button" onClick="editbtn('${e.price}','${e.notes}','${e.category}')" VALUE="edit" style="background-color: yellow;">  <input type="button" onClick="deletebtn('${e.notes}','${e.price}')" value="X" style="background-color: yellow;"></li>`;
     var add=document.getElementById("list");
     add.innerHTML+=li;
     var value=parseInt(e.price);
